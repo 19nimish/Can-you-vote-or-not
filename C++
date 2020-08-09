@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x,y,z;
+    
+    cout<<"Enter the DOB of the person in which he/she was born in the format DD MM YYYY : ";
+    cin>>x>>y>>z;
+    
+    if (z<2002)
+    {
+        cout<<"You are eligible";
+    }
+       else if(z==2002)
+       {
+           if (y<=8)
+           {
+                if (x<=9)
+                {
+                cout<<"\nYou are eligible";
+                }
+                else 
+                cout<<"\n You are not eligible";
+       
+            }
+       }
+    else
+    cout<<"You are not eligible";
+    
+     return 0;
+}
